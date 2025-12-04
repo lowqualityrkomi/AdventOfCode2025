@@ -14,4 +14,15 @@ public class DayFourTest
         
         Assert.Equal(13, adventOfCode.PartOne(input));
     }
+    
+    [Fact]
+    public void PartTwo_Test()
+    {
+        var adventOfCode = new DayFour();
+        
+        string input =
+            "..@@.@@@@.\n@@@.@.@.@@\n@@@@@.@.@@\n@.@@@@..@.\n@@.@@@@.@@\n.@@@@@@@.@\n.@.@.@.@@@\n@.@@@.@@@@\n.@@@@@@@@.\n@.@.@@@.@.";
+        
+        Assert.Equal(43,  adventOfCode.PartTwo(input));
+    }
 }
